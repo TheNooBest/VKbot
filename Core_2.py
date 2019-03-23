@@ -18,7 +18,7 @@ file = open('LOG_IN_DATA.txt', mode="r")
 data = [line.strip() for line in file]
 file.close()
 
-vk_session = vk_api.VkApi(data[0], data[1])  # , app_id=int(data[2]), captcha_handler=captcha_handler)
+vk_session = vk_api.VkApi(data[0], data[1]) , app_id=int(data[2]), captcha_handler=captcha_handler)
 
 try:
     vk_session.auth(token_only=True)
